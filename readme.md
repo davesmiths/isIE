@@ -4,7 +4,7 @@ isIE
 
 Created 2013 December 12
 
-Yep, another way to do it and hopefully compliment the many ways we can at the mo, which include <a href="http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">Conditional stylesheets vs CSS hacks? Answer: Neither! - Paul Irish</a>, object detection, dynamically adding conditional comments and user agent sniffing (for the brave or naughty).
+Yep, another way to do it but hopefully compliment the many ways we have at the mo, which include <a href="http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">Conditional stylesheets vs CSS hacks? Answer: Neither! - Paul Irish</a>, object detection, dynamically adding conditional comments and user agent sniffing (for the brave or naughty).
 
 What I like about this script is it's just JavaScript, can be run immediately anywhere in a doc, and is small.
 
