@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>isIE: JavaScript to detect Internet Explorer and it's version number</title>
+    
+<script>
+    var isIE = false;
+    /*@cc_on isIE = @_jscript_version;@*/
+    if (isIE !== false) {
+       if (isIE == 5.8)
+           isIE = 8;
+       else if (isIE == 5.7 && window.XMLHttpRequest)
+           isIE = 7;
+       else if (isIE == 5.7 || isIE == 5.6)
+           isIE = 6;
+       else if (isIE <= 5.5)
+           isIE = 5;
+    }
+</script>
+
+</head>
+<body>
+    
+    
+<h1>isIE Demo</h1>
+<p>Created 2013 December 12</p>
+
+<p><strong>Your browser is <span id="output"></span></strong></p>
+<p><strong>isIE = <span id="output2"></span></strong></p>
+<p>isIE is the global variable created by this script. When IE is detected it will equal the major version number: 5, 6, 7, 8, 9, 10...</p>
+<script>
+    
+    var output = document.getElementById('output')
+        ,output2 = document.getElementById('output2')
+        ,html = ''
+    ;
+    
+    if (isIE === false) {
+        html += 'not IE';
+    }
+    else if (isIE == 10) {
+        html += 'IE 10';
+    }
+    else if (isIE == 9) {
+        html += 'IE 9';
+    }
+    else if (isIE == 8) {
+        html += 'IE 8';
+    }
+    else if (isIE == 7) {
+        html += 'IE 7';
+    }
+    else if (isIE == 6) {
+        html += 'IE 6';
+    }
+    else if (isIE == 5) {
+        html += 'IE 5 or older';
+    }
+    
+    html += '';
+    
+    output.innerHTML = html;
+    output2.innerHTML = isIE;
+    
+    
+</script>
+
+
+</body>
+</html>
