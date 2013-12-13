@@ -20,11 +20,11 @@ Compatibility
 
 IE version correctly identified in: 10 (Win8), 9 (Win7), 8 (WinXP), 7 (Win Vista), 6 (WinXP)
 
-The possibility of a false positive is extremely low if not zero. Only browsers that can read Conditional Compilation comments set isIE to a value other than false, and as far as I know only IE uses these conditional comments.
+All non-IE browsers get isIE = false. Only browsers that know Conditional Compilation comments set isIE to a value other than false and as far as I know only IE knows. So the possibility of a false positive is extremely low if not zero.
 
 In testing I found that the script detects the browser version even if the compatibility mode is changed (in IE 10, 9 and 8), for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version.
 
-If a browser or version isn't mentioned here then it hasn't been tested.
+If a browser or version isn't mentioned here then it hasn't been tested; more tests welcomed.
 
 
 How it works
