@@ -34,7 +34,7 @@ Makes use of <a href="http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94
 
 
 Seen Elsewhere
---------------
+--------------------------
 
 * <a href="http://dean.edwards.name/weblog/2007/03/sniff/"><strong>Sniff!</strong><br/>http://dean.edwards.name/weblog/2007/03/sniff/</a><br />Dean Edward's blog post from 2007 where he used Conditional Compilation to show a super-short way of detecting whether the browser was IE or not, and <a href="http://dean.edwards.name/weblog/2007/03/sniff/#comment83590">comment 21</a> by Cristian Carlesso showing version detection
 * <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript"><strong>Conditional Comments</strong><br />http://en.wikipedia.org/wiki/Conditional_comment</a><br />Especially the section on Conditional Compilation near the bottom showing the version numbers given by @_jscript_version
