@@ -25,7 +25,7 @@ How it works
 
 Makes use of [Conditional Compilation](http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx), which could roughly translate as IE conditional comments in JavaScript. The key of which is @_jscript_version, a variable providing a version number which can be used to identify IE versions, see [Conditional Comments in JScript](http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript).
 
-The variable isIE is outputted by the script. By default this is false, so all non-IE browsers will get isIE = false. Only browsers that know Conditional Compilation comments set isIE to a value.
+The variable isIE is outputted by the script. By default this is false, so all non-IE browsers will get isIE = false. Only browsers that know Conditional Compilation comments set isIE to something else.
 
 When IE is detected isIE is set to the major version number, for example IE 10 will set isIE = 10. The only exception to this is for all IE less than 6 which sets isIE = 5.
 
