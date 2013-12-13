@@ -1,4 +1,4 @@
-/* isIE github.com/davesmiths/isIE */
+/* github.com/davesmiths/isIE */
 var isIE = false;
 /*@cc_on isIE = @_jscript_version;@*/
 if (isIE !== false) {
