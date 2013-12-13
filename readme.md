@@ -16,7 +16,7 @@ Download and use the demo or try <a href="http://dave-smith.info/GitHub/isIE/dem
 Compatibility
 -------------
 
-IE version correctly identified in: 10 (Win8), 9 (Win7), 8 (WinXP), 7 (Win Vista), 6 (WinXP)
+IE version correctly identified in: 10 (Win8), 9 (Win7), 8 (WinXP SP3), 7 (Win Vista SP2), 6 (WinXP SP3)
 
 All non-IE browsers get isIE = false. Only browsers that know Conditional Compilation comments set isIE to a value other than false and as far as I know only IE knows. So the possibility of a false positive is extremely low if not zero.
 
