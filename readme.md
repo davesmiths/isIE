@@ -33,25 +33,6 @@ How it works
 Makes use of <a href="http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx">JavaScript Conditional Compilation</a>, which is roughly IE conditional comments for JavaScript. The script revolves around @_jscript_version, a variable providing a version number which can be used to identify IE versions, see <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript">Conditional Comments in JScript</a>.
 
 
-Code
-----
-```
-<script>
-    var isIE = false;
-    /*@cc_on isIE = @_jscript_version;@*/
-    if (isIE !== false) {
-       if (isIE == 5.8)
-           isIE = 8;
-       else if (isIE == 5.7 && window.XMLHttpRequest)
-           isIE = 7;
-       else if (isIE == 5.7 || isIE == 5.6)
-           isIE = 6;
-       else if (isIE <= 5.5)
-           isIE = 5;
-    }
-</script>
-```
-
 Seen Elsewhere
 --------------
 
