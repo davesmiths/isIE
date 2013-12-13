@@ -1,6 +1,6 @@
 isIE
 ====
-** JavaScript to detect Internet Explorer and it's version number **
+**JavaScript to detect Internet Explorer and it's version number**
 
 Created 2013 December 12
 
@@ -10,6 +10,10 @@ What I like about this script is it's just JavaScript, can be run immediately an
 
 ... and hopefully will have a short lifespan as we start to forget about old IEs.
 
+
+Demo
+----
+Download and use the demo or try <a href="http://dave-smith.info/GitHub/isIE/demo/">dave-smith.info/GitHub/isIE/demo/</a>
 
 Compatibility
 -------------
