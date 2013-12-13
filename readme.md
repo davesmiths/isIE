@@ -2,11 +2,11 @@ isIE
 ====
 **JavaScript to detect Internet Explorer and it's version number**
 
-Yep, another way to do it but hopefully compliment the many ways we have at the mo, which include <a href="http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">Conditional stylesheets vs CSS hacks? Answer: Neither! - Paul Irish</a>, object detection, dynamically adding conditional comments and user agent sniffing (for the brave or naughty).
+Yep, another way to do it but hopefully just compliments the many ways we have at the mo, which include [html’s conditional classes](http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/), object detection, dynamically adding conditional comments and user agent sniffing (for the brave or naughty).
 
 What I like about this script is it's just JavaScript, can be run immediately and anywhere in the HTML, and is small.
 
-... and hopefully will have a short lifespan as we start to forget about old IEs.
+... hopefully it will have a short lifespan as we start to forget about old IEs.
 
 
 Demo
