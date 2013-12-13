@@ -6,9 +6,6 @@ Yep, another way to do it and hopefully compliments the methods already out ther
 
 What I like about this script is it's just JavaScript, can be run immediately and anywhere in the HTML, and is small.
 
-... hopefully it will have a short lifespan as we start to forget about old IEs.
-
-
 Demo
 ----
 Download and use the demo or try <a href="http://dave-smith.info/GitHub/isIE/demo/">dave-smith.info/GitHub/isIE/demo/</a>
