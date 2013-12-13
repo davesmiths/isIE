@@ -2,11 +2,9 @@ isIE
 ====
 **JavaScript to detect Internet Explorer and it's version number**
 
-Created 2013 December 12
-
 Yep, another way to do it but hopefully compliment the many ways we have at the mo, which include <a href="http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">Conditional stylesheets vs CSS hacks? Answer: Neither! - Paul Irish</a>, object detection, dynamically adding conditional comments and user agent sniffing (for the brave or naughty).
 
-What I like about this script is it's just JavaScript, can be run immediately anywhere in a doc, and is small.
+What I like about this script is it's just JavaScript, can be run immediately and anywhere in the HTML, and is small.
 
 ... and hopefully will have a short lifespan as we start to forget about old IEs.
 
@@ -33,8 +31,8 @@ How it works
 Makes use of <a href="http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx">JavaScript Conditional Compilation</a>, which is roughly IE conditional comments for JavaScript. The script revolves around @_jscript_version, a variable providing a version number which can be used to identify IE versions, see <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript">Conditional Comments in JScript</a>.
 
 
-Seen Elsewhere
---------------------------
+Seen elsewhere
+--------------
 
 * <a href="http://dean.edwards.name/weblog/2007/03/sniff/"><strong>Sniff!</strong><br/>http://dean.edwards.name/weblog/2007/03/sniff/</a><br />Dean Edward's blog post from 2007 where he used Conditional Compilation to show a super-short way of detecting whether the browser was IE or not, and <a href="http://dean.edwards.name/weblog/2007/03/sniff/#comment83590">comment 21</a> by Cristian Carlesso showing version detection
 * <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript"><strong>Conditional Comments</strong><br />http://en.wikipedia.org/wiki/Conditional_comment</a><br />Especially the section on Conditional Compilation near the bottom showing the version numbers given by @_jscript_version
@@ -48,3 +46,4 @@ Thanks
 There was a stackoverflow answer that mentioned Conditional Compilation and this got me started on the above, I can't find the stack again but I thank that person.
 
 
+Created 2013 December 12
