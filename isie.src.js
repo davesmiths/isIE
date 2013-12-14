@@ -1,5 +1,7 @@
 /* github.com/davesmiths/isIE */
-var isIE = false;
+var isIE = false
+    ,isIEmode
+;
 /*@cc_on isIE = @_jscript_version;@*/
 if (isIE !== false) {
    if (isIE == 5.8)
@@ -10,4 +12,7 @@ if (isIE !== false) {
        isIE = 6;
    else if (isIE <= 5.5)
        isIE = 5;
+   isIEmode = isIE;
+   if (document.documentMode)
+       isIEmode = document.documentMode;
 }

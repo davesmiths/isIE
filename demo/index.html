@@ -15,11 +15,13 @@
 
 <p><strong>Your browser is <span id="output"></span></strong></p>
 <p><strong>isIE = <span id="output2"></span></strong></p>
+<p><strong>isIEmode = <span id="output3"></span></strong></p>
 <p>isIE is the global variable created by this script. When IE is detected it will equal the major version number: 5, 6, 7, 8, 9, 10...</p>
 <script>
     
     var output = document.getElementById('output')
         ,output2 = document.getElementById('output2')
+        ,output3 = document.getElementById('output3')
         ,html = ''
     ;
     
@@ -49,6 +51,7 @@
     
     output.innerHTML = html;
     output2.innerHTML = isIE;
+    output3.innerHTML = isIEmode;
     
     
 </script>
