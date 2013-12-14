@@ -36,6 +36,7 @@ Seen elsewhere
 * <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript"><strong>Conditional Comments</strong><br />http://en.wikipedia.org/wiki/Conditional_comment</a><br />Especially the section on Conditional Compilation near the bottom showing the version numbers given by @_jscript_version
 * <a href="http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx"><strong>Conditional Compilation (JavaScript)</strong><br />http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx</a><br />Kind of helped, in the way that it confirmed it would probably work ish
 * <a href="http://stackoverflow.com/questions/1843247/cc-on-and-ie6-detection"><strong>/*@cc_on and IE6 detection</strong><br />http://stackoverflow.com/questions/1843247/cc-on-and-ie6-detection</a><br />The problem laid out in this stack was the problem I set about working around
+* <a href="http://tanalin.com/en/articles/ie-version-js/">**Internet Explorer (IE) version detection in JavaScript**<br />http://tanalin.com/en/articles/ie-version-js/</a><br />A brilliant write-up on the subject by Marat Tanalin, wish I'd seen this before
 
 
 Thanks
