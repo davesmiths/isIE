@@ -13,7 +13,7 @@ Download and use the demo or try <a href="http://dave-smith.info/GitHub/isIE/dem
 Compatibility
 -------------
 
-IE version correctly identified in: 10 (Win8), 9 (Win7), 8 (WinXP SP3), 7 (Win Vista SP2), 6 (WinXP SP3)
+IE version correctly identified in: 10 (Win8), 9 (Win7 SP1), 8 (WinXP SP3), 7 (Win Vista SP2), 6 (WinXP SP3)
 
 In testing I found that the script detects the browser version even if the compatibility mode is changed (in IE 10, 9 and 8), for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version.
 
