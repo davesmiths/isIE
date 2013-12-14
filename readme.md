@@ -13,9 +13,12 @@ Download and use the demo or try <a href="http://dave-smith.info/GitHub/isIE/dem
 Compatibility
 -------------
 
-IE version correctly identified in: 10 (Win8), 9 (Win7 SP1), 8 (WinXP SP3), 7 (Win Vista SP2), 6 (WinXP SP3)
-
-In testing I found that the script detects the browser version even if the compatibility mode is changed (in IE 10, 9 and 8), for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version.
+IE version and compatibility mode correctly identified in:
+* 10 (Win8)
+* 9 (Win7 SP1)
+* 8 (WinXP SP3)
+* 7 (Win Vista SP2)
+* 6 (WinXP SP3)
 
 If a browser or version isn't mentioned here then it hasn't been tested; more tests welcomed.
 
@@ -23,11 +26,19 @@ If a browser or version isn't mentioned here then it hasn't been tested; more te
 How it works
 ------------
 
-Makes use of [Conditional Compilation](http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx), which could roughly translate as IE conditional comments in JavaScript. The key of which is @_jscript_version, a variable providing a version number which can be used to identify IE versions, see [Conditional Comments in JScript](http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript).
+isIE creates two variables:
+* isIE: The browser major version number
+* isIEmode: The compatibility mode major version number
 
-The variable isIE is outputted by the script. By default this is false, so all non-IE browsers will get isIE = false. Only browsers that know Conditional Compilation comments set isIE to something else.
+isIE is calculated using [Conditional Compilation](http://msdn.microsoft.com/en-us/library/121hztk3%28v=vs.94%29.aspx), which could roughly translate as IE conditional comments in JavaScript. The key of which is @_jscript_version, a variable providing a version number which can be used to identify IE versions, see [Conditional Comments in JScript](http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript).
 
-When IE is detected isIE is set to the major version number, for example IE 10 will set isIE = 10. The only exception to this is for all IE less than 6 which sets isIE = 5.
+By default isIE is false, so all non-IE browsers get false. Only browsers that know Conditional Compilation comments set isIE to something else.
+
+When IE is detected isIE is set to the major version number, for example IE 10 will set isIE = 10. The only exception to this is for all IE lte 5.5 which sets isIE = 5.
+
+In testing I found that isIE gives the browser version even if the compatibility mode is changed (in IE 10, 9 and 8), for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version. Hence isIEmode is also created as knowing both may be useful.
+
+isIEmode is calcaulated using the proprietry object document.documentMode. By default this is set to isIE and overridden with the compatibility mode major version number when document.documentMode exists.
 
 Seen elsewhere
 --------------
