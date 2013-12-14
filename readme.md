@@ -36,7 +36,7 @@ By default isIE is false, so all non-IE browsers get false. Only browsers that k
 
 When IE is detected isIE is set to the major version number, for example IE 10 will set isIE = 10. The only exception to this is for all IE lte 5.5 which sets isIE = 5.
 
-In testing I found that isIE gives the browser version even if the compatibility mode is changed (in IE 10, 9 and 8), for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version. Hence isIEmode is also created as knowing both may be useful.
+In testing I found that isIE gives the browser version even if the compatibility mode is changed, for example if IE 10 is used in IE 7 mode, then IE 10 will be the detected version. Hence isIEmode is also created as knowing both may be useful.
 
 isIEmode is calcaulated using the proprietry object document.documentMode. By default this is set to isIE and overridden with the compatibility mode major version number when document.documentMode exists.
 
